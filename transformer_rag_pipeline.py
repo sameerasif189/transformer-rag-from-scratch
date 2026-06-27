@@ -657,7 +657,7 @@ def run_in_notebook(
     """
     Notebook helper:
     Example:
-        from nlp_assignment3_pipeline import run_in_notebook
+        from transformer_rag_pipeline import run_in_notebook
         metrics = run_in_notebook(data_dir='.', epochs_encoder=10, epochs_decoder=10)
     """
     args = argparse.Namespace(
@@ -680,7 +680,7 @@ def run_in_notebook(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="NLP Assignment 3: Transformer + RAG from scratch")
+    parser = argparse.ArgumentParser(description="Transformer + RAG from scratch")
     parser.add_argument("--data_dir", type=str, default=".")
     parser.add_argument("--category_dirs", type=str, nargs="*", default=None)
     parser.add_argument("--max_per_category", type=int, default=10000)
